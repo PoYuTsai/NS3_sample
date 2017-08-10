@@ -19,10 +19,9 @@ git clone https://github.com/nsnam/ns-3-dev-git.git
 ## 使用教學
 
 
-1.Put all files into/ns-allinone-3.26/ns-3.26/scratch
+1.把除了此文件檔案外的所有檔案放到/ns-allinone-3.26/ns-3.26/scratch
 
 2.在/ns-allinone-3.26/ns-3.26目錄 以終端機模擬打入：
-
 
 sudo ./waf --run scratch/Wi-Fi TCP.cc 
 
@@ -31,5 +30,5 @@ sudo ./waf --run scratch/Wi-Fi TCP.cc
 
 
 ## 模擬內容
-量測封包間隔延遲
+變動參數去量測TCP的end-to-end delays，以及理論和實驗的誤差值
 
