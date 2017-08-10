@@ -23,9 +23,9 @@ git clone https://github.com/nsnam/ns-3-dev-git.git
 
 2.在/ns-allinone-3.26/ns-3.26目錄 以終端機模擬打入：
 
-sudo ./waf --run scratch/Wi-Fi TCP.cc 
+sudo ./waf --run scratch/wifi-tcp 
 
-3.如果要開啟影像模擬：sudo ./waf --run scratch/wifi-tcp --vis
+（如果要開啟影像模擬：sudo ./waf --run scratch/wifi-tcp --vis）
 
 
 
