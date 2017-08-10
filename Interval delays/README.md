@@ -20,20 +20,22 @@ git clone https://github.com/nsnam/ns-3-dev-git.git
 1.把要執行的程式放入/ns-allinone-3.26/ns-3.26/scratch
 
 2.在/ns-allinone-3.26/ns-3.26目錄 以終端機模擬打入：
-log.txt.log        //產生log檔
 
-script log/log.txt // 在scratch 裡的log資料夾產生log檔案，方便等等執行完抓取實驗數據
+scropt log/log.txt        //在log資料夾裡產生一個log檔，方便紀錄實驗數據
 
-exit
 
-sudo ./waf --run scratch/third.cc 
 
-3.如果要開啟影像模擬：sudo ./waf --run scratch/wifi-tcp --vis
+sudo ./waf --run scratch/third     //執行程式,檔名third
 
-4.在/ns-allinone-3.26/ns-3.26/log 以終端機模擬打入：
+exit            //結束
 
-sudo ns.py //跑出實驗數據
+
+3.在/ns-allinone-3.26/ns-3.26/log 以終端機模擬打入：
+
+pythin ns.py    //跑出實驗數據(用python小程式抓取”數字“,方便貼到excel畫圖)
 
 ## 模擬內容
 量測封包間隔延遲
+實驗結果顯示在間隔為一秒時會趨於穩定，低於一秒時封包丟失率為70%。
+（此為UDP的做法）
 
