@@ -30,5 +30,5 @@ sudo ./waf --run scratch/wifi-tcp
 
 
 ## 模擬內容
-變動參數去量測TCP的end-to-end delays，以及理論和實驗的誤差值。TCP的封包丟失會比較低由於封包會重送，最多三次才會drop掉。
+變動參數去量測TCP的end-to-end delays，以及理論和實驗的誤差值。TCP的封包丟失率會比較低由於封包會重送，最多三次才會drop掉。
 
