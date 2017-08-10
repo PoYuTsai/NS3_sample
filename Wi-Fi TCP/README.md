@@ -31,5 +31,8 @@ sudo ./waf --run scratch/Wi-Fi TCP.cc
 
 ## 模擬內容
 變動參數去量測TCP的end-to-end delays，以及理論和實驗的誤差值
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6472e0c857b505a126539da8bb68428944f8faed
 
