@@ -20,20 +20,21 @@ git clone https://github.com/nsnam/ns-3-dev-git.git
 1.把要執行的程式放入/ns-allinone-3.26/ns-3.26/scratch
 
 2.在/ns-allinone-3.26/ns-3.26目錄 以終端機模擬打入：
-log.txt.log        //產生log檔
 
-script log/log.txt // 在scratch 裡的log資料夾產生log檔案，方便等等執行完抓取實驗數據
+script log/log.txt                  //在log資料夾裡產生一個log檔，方便紀錄實驗數據
 
-exit
 
-sudo ./waf --run scratch/third.cc 
 
-3.如果要開啟影像模擬：sudo ./waf --run scratch/wifi-tcp --vis
+sudo ./waf --run scratch/third     //執行程式，檔名third
 
-4.在/ns-allinone-3.26/ns-3.26/log 以終端機模擬打入：
+exit                               //結束
 
-sudo ns.py //跑出實驗數據
+
+3.在/ns-allinone-3.26/ns-3.26/log 以終端機模擬打入：
+
+pythin ns.py                       //跑出實驗數據(用python小程式抓取”數字“，方便貼到excel畫圖)
 
 ## 模擬內容
-量測雙核心的延遲
+量測雙核心（概念上）的做法，假設UE有兩張網卡，基於SCTP，使用第一條channel傳送總共100個封包，再把100個封包分一半（50個封包）利用第二條channel傳送。
+研究結果表示當Data rate越大，end-to-end delay會越小。Data rate若介於初始0-40(Kbps)左右時，差距會特別明顯，原因在於延遲時間會等於封包大小/頻寬，從實驗中可驗證。
 
