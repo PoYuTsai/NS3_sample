@@ -35,5 +35,5 @@ sudo ./waf --run scratch/third.cc
 sudo ns.py //跑出實驗數據
 
 ## 模擬內容
-量測封包間隔延遲
+量測雙核心的延遲
 
