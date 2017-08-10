@@ -25,14 +25,14 @@ script log/log.txt                  //在log資料夾裡產生一個log檔，
 
 
 
-sudo ./waf --run scratch/third     //執行程式,檔名third
+sudo ./waf --run scratch/third     //執行程式，檔名third
 
 exit                               //結束
 
 
 3.在/ns-allinone-3.26/ns-3.26/log 以終端機模擬打入：
 
-pythin ns.py                       //跑出實驗數據(用python小程式抓取”數字“,方便貼到excel畫圖)
+pythin ns.py                       //跑出實驗數據(用python小程式抓取”數字“，方便貼到excel畫圖)
 
 ## 模擬內容
 量測封包間隔延遲
