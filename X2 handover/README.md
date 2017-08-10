@@ -29,5 +29,5 @@ sudo ./waf --run scratch/X2-handover
 
 
 ## 模擬內容
-在同質的LTE環境下，利用X2介面換手。
+在同質的LTE環境下，利用X2介面換手（預測模式:PMAG預測NMAG的做法）。
 
